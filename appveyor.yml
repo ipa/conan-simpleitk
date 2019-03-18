@@ -34,16 +34,3 @@ install:
 
 test_script:
   - python build.py
-
-deploy:
-- provider: BinTray
-  username: ipa
-  api_key:
-    secure: 3333191b85bb509da5eb4ac5006cb124add78569
-  subject: ipa
-  repo: conan
-  package: OpenIGTLink
-  version: 3.0
-  publish: true
-  override: true
-  explode: true
